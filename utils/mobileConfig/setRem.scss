@@ -1,0 +1,9 @@
+// 定义 rem 函数
+@function rem($value) {
+  $base-font-size: 75; // 基准字体大小
+  @return ($value / $base-font-size) * 1rem; // 返回计算后的 rem 值
+}
+
+@function rem_2($value, $base-font-size: 75) {
+  @return ($value / $base-font-size) * 1rem; // 返回计算后的 rem 值
+}
