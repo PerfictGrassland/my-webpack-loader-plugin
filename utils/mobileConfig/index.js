@@ -4,13 +4,13 @@ export const setViewport = function (scale) {
   if (viewportMeta) {
     viewportMeta.setAttribute(
       "content",
-      `width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalabel=no, shrink-tofit=no`
+      `width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no, shrink-to-fit=no`
     );
   } else {
     // 如果没有找到，则创建新的 meta 标签
     viewportMeta = document.createElement("meta");
     viewportMeta.name = "viewport";
-    viewportMeta.content = `width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalabel=no, shrink-tofit=no`;
+    viewportMeta.content = `width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no, shrink-to-fit=no`;
     document.head.appendChild(viewportMeta);
   }
 };

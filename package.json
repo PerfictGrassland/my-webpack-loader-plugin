@@ -1,6 +1,6 @@
 {
   "name": "my-webpack-loader-plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A custom Webpack loader and plugin.",
   "main": "index.js",
   "keywords": [
